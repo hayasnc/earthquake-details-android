@@ -61,8 +61,9 @@ public final class QueryUtils {
                 double mag = properties.getDouble("mag");
                 String place = properties.getString("place");
                 long time = properties.getLong("time");
+                String url = properties.getString("url");
 
-                Earthquake earthquake = new Earthquake( time,place,mag);
+                Earthquake earthquake = new Earthquake( time,place,mag,url);
 
 
                 // adding contact to contact list

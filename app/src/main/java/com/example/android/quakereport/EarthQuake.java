@@ -10,12 +10,18 @@ public class Earthquake {
 
     private double mMagnitude;
 
+    private String mUrl;
 
-    public Earthquake(long vDate, String vPlace, double vMagnitude)
+    public Earthquake(long vDate, String vPlace, double vMagnitude, String vUrl)
     {
         mDate = vDate;
         mPlace = vPlace;
         mMagnitude = vMagnitude;
+        mUrl= vUrl;
+    }
+
+    public String getmUrl() {
+        return mUrl;
     }
 
     public long getmDate() {
