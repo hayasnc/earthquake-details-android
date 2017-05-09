@@ -2,15 +2,11 @@ package com.example.android.quakereport;
 
 import android.app.Activity;
 
-import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.example.android.quakereport.R;
 
 import java.util.ArrayList;
 
@@ -24,7 +20,7 @@ import java.util.ArrayList;
 * {@link AndroidFlavorAdapter} is an {@link ArrayAdapter} that can provide the layout for each list
 * based on a data source, which is a list of {@link AndroidFlavor} objects.
 * */
-public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
+public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
 
     private static final String LOG_TAG = "adapter";
 
@@ -36,7 +32,7 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
      * @param context        The current context. Used to inflate the layout file.
      * @param earthquakes A List of AndroidFlavor objects to display in a list
      */
-    public EarthQuakeAdapter(Activity context, ArrayList<EarthQuake> earthquakes) {
+    public EarthquakeAdapter(Activity context, ArrayList<Earthquake> earthquakes) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
@@ -62,7 +58,7 @@ public class EarthQuakeAdapter extends ArrayAdapter<EarthQuake> {
                     R.layout.layout, parent, false);
         }
 
-        EarthQuake currentAndroidFlavor = getItem(position);
+        Earthquake currentAndroidFlavor = getItem(position);
 
         TextView dateTextView = (TextView) listItemView.findViewById(R.id.textView1);
         dateTextView.setText(currentAndroidFlavor.getmDate());
