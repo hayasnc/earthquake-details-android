@@ -60,9 +60,9 @@ public final class QueryUtils {
                 JSONObject properties = c.getJSONObject("properties");
                 String mag = properties.getString("mag");
                 String place = properties.getString("place");
-                String time = properties.getString("time");
+                long time = properties.getLong("time");
 
-                Earthquake earthquake = new Earthquake( mag,place,time);
+                Earthquake earthquake = new Earthquake( time,place,mag);
 
 
                 // adding contact to contact list

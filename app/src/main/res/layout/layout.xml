@@ -7,27 +7,30 @@
     android:padding="16px">
 
     <TextView
+        android:id="@+id/magnitude"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView1"
-        tools:text="1"/>
+        tools:text="8.9" />
+
     <TextView
+        android:id="@+id/location"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView2"
-        tools:text="SanFrancisco"/>
+        tools:text="San Francisco, CA" />
+
     <TextView
+        android:id="@+id/date"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/textView3"
-        tools:text="6.8"/>
+        tools:text="Mar 6, 2010" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="3:00 PM" />
 </LinearLayout>
