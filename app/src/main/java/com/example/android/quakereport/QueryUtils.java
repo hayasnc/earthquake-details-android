@@ -58,7 +58,7 @@ public final class QueryUtils {
 
                 // Phone node is JSON Object
                 JSONObject properties = c.getJSONObject("properties");
-                String mag = properties.getString("mag");
+                double mag = properties.getDouble("mag");
                 String place = properties.getString("place");
                 long time = properties.getLong("time");
 
